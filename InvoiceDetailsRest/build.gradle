@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+
+description = """InvoiceDetails"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+     compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version:'1.7.1'
+     compile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+     compile group: 'org.springframework', name: 'spring-core', version:'3.0.5.RELEASE'
+     compile group: 'org.springframework', name: 'spring-web', version:'3.0.5.RELEASE'
+     compile group: 'org.springframework', name: 'spring-webmvc', version:'3.0.5.RELEASE'
+     compile group: 'org.springframework', name: 'spring-jdbc', version:'3.0.5.RELEASE'
+     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.7.4'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version:'2.7.4'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version:'2.7.4'
+    compile group : 'mysql' , name :'mysql-connector-java' , version :'5.1.30'
+}
+
